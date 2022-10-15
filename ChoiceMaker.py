@@ -1,7 +1,10 @@
 import random
 
+choice_list = []
+
+print("Enter your choices one by one. Type END to start generating a choice:")
+
 def choice_maker():
-    choice_list = []
     while True:
         input_string = input("Enter a choice:")
         if input_string == "END":
@@ -18,8 +21,10 @@ def choice_maker():
             choice_list.append(input_string)
 
 
+
+
 def main():
-    print("Enter your choices one by one. Type END to start generating a choice:")
+
     choice_maker()
 
 
